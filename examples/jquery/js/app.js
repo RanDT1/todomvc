@@ -92,7 +92,7 @@ jQuery(function ($) {
 			this.todos.forEach(function (todo) {
 				todo.completed = isChecked;
 			});
-      this.store();
+			this.store();
 			this.render();
 		},
 		getActiveTodos: function () {
@@ -150,7 +150,7 @@ jQuery(function ($) {
 			});
 
 			$input.val('');
-      this.store();
+			this.store();
 			this.render();
 		},
 		toggle: function (e) {
@@ -187,7 +187,7 @@ jQuery(function ($) {
 			} else {
 				this.todos[this.indexFromEl(el)].title = val;
 			}
-      this.store();
+			this.store();
 			this.render();
 		},
 		destroy: function (e) {
